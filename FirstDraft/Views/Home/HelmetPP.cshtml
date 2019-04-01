@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "HelmetPP";
+}
+
+<h2>HelmetPP</h2>
+
+<div class="row">
+
+    <div class="col-md-5">
+        <p>
+            "Where is your Helmet?", every mother once she has seen their child riding a bike without a helmet.
+        </p>
+        <div>
+            <a href="@Url.Action("ClubkitBuy", "Home" )">
+                <input id="Back" type="button" value="Back" />
+            </a>
+            <input id="Helmet" type="button" value="Buy" />
+        </div>
+    </div>
+
+    <div class="col-md-2">
+    </div>
+
+    <div class="col-md-4">
+        <img src="~/Content/Images/Helmet.jpg" />
+    </div>
+
+    <div class="col-md-1">
+        <a href="@Url.Action("BuyPage", "Home" )">
+            <img src="~/Content/Images/shopping-cart.png" />
+        </a>
+    </div>
+
+</div>

@@ -1,0 +1,56 @@
+﻿@model FirstDraft.Models.Customers
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RegistrationPage</title>
+</head>
+<body>
+    @using (Html.BeginForm("RegistrationPage", "Home", FormMethod.Post))
+    {
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <th colspan="2" align="center">Person Details</th>
+            </tr>
+            <tr>
+                <td>Forname: </td>
+                <td>
+                    @Html.TextBoxFor(Models => Models.Forname)
+                    @Html.LabelFor(Models => Models.Forname)
+                </td>
+            </tr>
+            <tr>
+                <td>Surname: </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Surname)
+                    @Html.LabelFor(m => m.Surname)
+                </td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Email)
+                    @Html.LabelFor(model => model.Email)
+                </td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Password)
+                    @Html.LabelFor(model => model.Password)
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"/></td>
+            </tr>
+        </table>
+    }
+</body>
+</html>

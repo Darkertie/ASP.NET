@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "customers";
+}
+
+<h2>customers</h2>
+
+@*@{
+    public ActionResult Index() {
+        var customers = from e in GetCustomersList()
+                        orderby e.ID
+                        select e;
+        return View(customers);
+    }
+}*@

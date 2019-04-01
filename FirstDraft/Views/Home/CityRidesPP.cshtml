@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "City Rides";
+}
+
+<h1>City Rides</h1>
+
+<div class="row">
+
+    <div class="col-md-5">
+        <p>
+            City riding can be quite scary, having to weave and dodge cars that take up a large portion of the road
+            as well as making sure not to scratch or dint anything as well. Then there is the cycle paths, who has right of way? When can I go?
+            When do I stop? Is this the right way? Or the wrong way? All these questions and no one to answer them. This is where
+            our city riding club comes into play. Learn how to navigate around your city, safely. So you can get on your bike and make the commute
+            through the city with peace in-mind.
+        </p>
+        <div>
+            <a href="@Url.Action("SClubRideEvents", "Home")">
+                <input id="Back" type="button" value="Back" />
+            </a>
+        </div>
+        <div class="divider"></div> <input id="BookCR" type="button" value="Join" />
+    </div>
+
+    <div class="col-md-2">
+    </div>
+
+    <div class="col-md-4">
+        <img src="~/Content/Images/City Rides.jpg" />
+    </div>
+
+    <div class="col-md-1">
+        <a href="@Url.Action("BuyPage", "Home" )">
+            <img src="~/Content/Images/shopping-cart.png" />
+        </a>
+    </div>
+
+</div>

@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "BikePumpPP";
+}
+
+<h2>BikePumpPP</h2>
+
+<div class="row">
+
+    <div class="col-md-5">
+        <p>
+            "Nee need for a Flatty when you carry your mate Pump", look, i tried to make that rhyme.
+        </p>
+        <div>
+            <a href="@Url.Action("ClubkitBuy", "Home" )">
+                <input id="Back" type="button" value="Back" />
+            </a>
+            <input id="BikePump" type="button" value="Buy" />
+        </div>
+    </div>
+
+    <div class="col-md-2">
+    </div>
+
+    <div class="col-md-4">
+        <img src="~/Content/Images/BikePump.jpg" />
+    </div>
+
+    <div class="col-md-1">
+        <a href="@Url.Action("BuyPage", "Home" )">
+            <img src="~/Content/Images/shopping-cart.png" />
+        </a>
+    </div>
+
+</div>
