@@ -6,6 +6,7 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/Content/bootstrap.css")
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -14,20 +15,20 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("VeloMania", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Sign Up", "RegistrationPage", "Home")</li>
+                    <li>@Html.ActionLink("Sign Up", "RegistrationPage", "Home")</li>/*Will need to be deleted*/
+                    <li>@Html.ActionLink("Sign Up MKII", "Registration", "User")</li>
                     <li>@Html.ActionLink("About Us", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Rides & Events", "SClubRideEvents", "Home")</li>
                     <li>@Html.ActionLink("Clubkit", "ClubkitBuy", "Home")</li>
                     <li>@Html.ActionLink("Orders", "Orders", "Home")</li>
-                    <li>@Html.ActionLink("Basket", "BuyPage", "Home")</li>
+                    <li><a href="/Home/BuyPage"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
                 </ul>
             </div>
         </div>
@@ -35,13 +36,14 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        <footer class="panel-footer">
+            <p>&copy; @DateTime.Now.Year - VeloMania</p>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryval")
     @RenderSection("scripts", required: false)
 </body>
 </html>

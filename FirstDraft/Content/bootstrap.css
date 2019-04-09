@@ -259,6 +259,9 @@ th {
   .table-bordered td {
     border: 1px solid #ddd !important;
   }
+  .li1{
+      
+  }
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
@@ -631,7 +634,8 @@ th {
   content: "\e115";
 }
 .glyphicon-shopping-cart:before {
-  content: "\e116";
+    content: "\e116";
+    position: absolute; left: 20%;
 }
 .glyphicon-folder-close:before {
   content: "\e117";
@@ -5489,6 +5493,8 @@ button.list-group-item-danger.active:focus {
   border-top: 1px solid #ddd;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
+  position: absolute;
+  bottom: 0;
 }
 .panel > .list-group,
 .panel > .panel-collapse > .list-group {

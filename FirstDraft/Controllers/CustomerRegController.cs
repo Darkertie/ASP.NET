@@ -10,20 +10,27 @@ namespace FirstDraft.Controllers
     public class CustomerRegController : Controller
     {
         // GET: CustomerReg
-        public ActionResult Index()
+        public ActionResult RegistrationPage()
         {
             return View();
         }
 
-        [HttpPost]
-        public ActionResult Index(Customers Customers)
-        {
-            string Forname = Customers.Forname;
-            string Surname = Customers.Surname;
-            string Email = Customers.Email;
-            string Password = Customers.Password;
+        
 
-            return View();
+        
+        public ActionResult Autherize()
+        {
+            return View("Index");
+        }
+        [HttpPost]
+        public ActionResult RegistrationPage(Customers Models)
+        {
+            string Forname = Models.Forname;
+            string Surname = Models.Surname;
+            string Email = Models.Email;
+            string Password = Models.Password;
+
+            return View("Index");
         }
     }
 }

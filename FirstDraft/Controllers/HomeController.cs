@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FirstDraft.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -32,6 +33,16 @@ namespace FirstDraft.Controllers
             ViewBag.Message = "Your registration page.";
 
             return View();
+        }
+
+        public ActionResult RegistrationPage(Customers Models)
+        {
+            string Forname = Models.Forname;
+            string Surname = Models.Surname;
+            string Email = Models.Email;
+            string Password = Models.Password;
+
+            return View("Index");
         }
 
         public ActionResult SClubRideEvents()

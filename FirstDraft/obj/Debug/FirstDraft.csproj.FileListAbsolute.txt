@@ -78,3 +78,7 @@ C:\Users\john.a.chambers\source\repos\FirstDraft\FirstDraft\obj\Debug\FirstDraft
 C:\Users\john.a.chambers\source\repos\FirstDraft\FirstDraft\obj\Debug\FirstDraft.csproj.CopyComplete
 C:\Users\john.a.chambers\source\repos\FirstDraft\FirstDraft\obj\Debug\FirstDraft.dll
 C:\Users\john.a.chambers\source\repos\FirstDraft\FirstDraft\obj\Debug\FirstDraft.pdb
+C:\Users\john.a.chambers\source\repos\FirstDraft\FirstDraft\bin\EntityFramework.dll
+C:\Users\john.a.chambers\source\repos\FirstDraft\FirstDraft\bin\EntityFramework.SqlServer.dll
+C:\Users\john.a.chambers\source\repos\FirstDraft\FirstDraft\bin\EntityFramework.xml
+C:\Users\john.a.chambers\source\repos\FirstDraft\FirstDraft\bin\EntityFramework.SqlServer.xml
