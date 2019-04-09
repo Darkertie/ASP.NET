@@ -23,7 +23,7 @@ namespace FirstDraft.Controllers
             return View("Index");
         }
         [HttpPost]
-        public ActionResult RegistrationPage(Customers Models)
+        public ActionResult c(Customers Models)
         {
             string Forname = Models.Forname;
             string Surname = Models.Surname;

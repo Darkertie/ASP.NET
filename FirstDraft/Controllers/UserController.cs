@@ -23,14 +23,15 @@ namespace FirstDraft.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Registration([Bind(Exclude = "IsEmailVerified,ActivationCode")] User user)
         {
-            bool Status = false;
-            string message = "";
+            bool Status = true;
+            string message = "Success";
 
             // Model Validation
             if (ModelState.IsValid)
             {
                 #region //Email is already present
                 var isExist = IsEmailExist(user.EmailID);
+                isExist = false;
                 if (isExist)
                 {
                     ModelState.AddModelError("EmailExist", "Email already exist");
@@ -49,7 +50,7 @@ namespace FirstDraft.Controllers
                 user.IsEmailVerified = false;
 
                 #region Save to Database
-                using (MyDatabaseEntities dc = new MyDatabaseEntities())
+                /*using (MyDatabaseEntities dc = new MyDatabaseEntities())
                 {
                     dc.Users.Add(user);
                     dc.SaveChanges();
@@ -59,7 +60,7 @@ namespace FirstDraft.Controllers
                     message = "Registration successfuly done. Account activation link " +
                         " has been sent to your email id:" + user.EmailID;
                     Status = true;
-                }
+                } */
                 #endregion
 
             }
